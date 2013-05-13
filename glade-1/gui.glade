@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<interface>
+  <!-- interface-requires gtk+ 2.6 -->
+  <!-- interface-naming-policy toplevel-contextual -->
+  <object class="GtkWindow" id="main_window">
+    <signal name="destroy" handler="destroy"/>
+    <signal name="delete_event" handler="delete_event"/>
+    <child>
+      <object class="GtkButton" id="hello_world_button">
+        <property name="label" translatable="yes">&#x645;&#x631;&#x62D;&#x628;&#x627;&#x64B; &#x628;&#x627;&#x644;&#x639;&#x627;&#x644;&#x645;</property>
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="receives_default">True</property>
+        <signal name="clicked" handler="buttonClicked"/>
+      </object>
+    </child>
+  </object>
+</interface>
